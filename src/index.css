@@ -1,0 +1,33 @@
+/* Tailwind v4 入口 */
+@import "tailwindcss";
+
+/* === 你的自訂樣式（從原 HTML 搬過來）=== */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.floating { animation: float 6s ease-in-out infinite; }
+.glow-text { text-shadow: 0 0 10px rgba(59,130,246,.7); }
+.glow-box { box-shadow: 0 0 15px rgba(59,130,246,.5); }
+.tech-bg {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+.code-bg {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border: 1px solid rgba(59,130,246,.3);
+}
+@keyframes fadeIn { from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);} }
+.tab-content-enter { animation: fadeIn .5s ease-in-out; }
+
+.terminal { font-family: 'Courier New', monospace; background:#0f172a; color:#e2e8f0; border-radius:.5rem; padding:1rem; position:relative; }
+.terminal::before { content:""; position:absolute; top:0; left:0; right:0; height:30px; background:rgba(255,255,255,.1); border-radius:.5rem .5rem 0 0; }
+.terminal-header { position:absolute; top:5px; left:10px; display:flex; gap:6px; }
+.terminal-btn { width:12px; height:12px; border-radius:50%; }
+.terminal-btn.red{background:#ef4444;} .terminal-btn.yellow{background:#f59e0b;} .terminal-btn.green{background:#10b981;}
+.cursor { animation: blink 1s infinite; }
+@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
+
+.skill-bar { height:6px; background:rgba(203,213,225,.2); border-radius:3px; overflow:hidden;}
+.skill-progress { height:100%; background:linear-gradient(90deg,#3b82f6,#8b5cf6); border-radius:3px; }
+.project-card { transition: all .3s ease; }
+.project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(59,130,246,.3); }

@@ -5,10 +5,10 @@ export default function Home() {
           <div className="lg:flex lg:items-center lg:justify-between">
             <div className="lg:w-1/2">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 glow-text">
-                嗨，我是 <span className="text-blue-400">程式開發者</span>
+                嗨，我是瑋駿是一個 <span className="text-blue-400">AI機器視覺開發者</span>
               </h1>
               <p className="text-lg text-gray-300 mb-8">
-                我專注於創建高效、優雅且用戶友好的程式解決方案。我的作品涵蓋 Web 開發、移動應用和數據分析等多個領域。
+                我專注於創建高效、優雅且用戶友好的程式解決方案。我的作品涵蓋 Web 開發、AI串聯、機器視覺和數據分析等多個領域。
               </p>
               <div className="flex gap-4">
                 <a href="/projects"
@@ -36,9 +36,9 @@ export default function Home() {
                       </div>
                       <div className="mt-8">
                         <p className="text-green-400">$ <span className="text-white">whoami</span></p>
-                        <p className="text-blue-300 mt-2">full-stack-developer</p>
+                        <p className="text-blue-300 mt-2">AI-AOI-developer</p>
                         <p className="text-green-400 mt-4">$ <span className="text-white">skills --show</span></p>
-                        <p className="text-blue-300 mt-2">JavaScript, Python, React, Node.js</p>
+                        <p className="text-blue-300 mt-2">JavaScript, Python, React, Node.js, R-CNN, YOLO, OpenCV</p>
                         <p className="text-green-400 mt-4">$ <span className="text-white">projects --count</span></p>
                         <p className="text-blue-300 mt-2">12+ completed</p>
                         <p className="text-green-400 mt-4">$ <span className="cursor">_</span></p>
@@ -54,9 +54,9 @@ export default function Home() {
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               {icon:"fa-code", n:"12+", t:"完成項目"},
-              {icon:"fa-users", n:"8+", t:"滿意客戶"},
-              {icon:"fa-star", n:"5", t:"年經驗"},
-              {icon:"fa-award", n:"3", t:"獲獎項目"},
+              {icon:"fa-users", n:"8+", t:"流程開發"},
+              {icon:"fa-star", n:"2", t:"年經驗"},
+              {icon:"fa-award", n:"1", t:"專利發明"},
             ].map((x,i)=>(
               <div key={i} className="code-bg rounded-xl p-6 text-center glow-box transition-all">
                 <div className="text-blue-400 text-3xl mb-3">

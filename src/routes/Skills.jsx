@@ -1,9 +1,19 @@
 export default function Skills() {
     const skills = [
-      { name:"React", p:90 },
-      { name:"Python", p:85 },
+      { name:"Python", p:100 },
+      { name:"OpenCV", p:100 },
+      { name:"Pillow", p:95 }, 
+      { name:"ResNext101", p:95 },
+      { name:"YOLOV8", p:95 },
+      { name:"TensorFlow", p:95 },
+      { name:"PyTorch", p:95 },
+      { name:"JavaScript", p:90 },
+      { name:"CUDA", p:90 },
+      { name:"C#", p:85 },
+      { name:"CMAKE", p:85 },
+      { name:"React", p:80 },
       { name:"Node.js", p:80 },
-      { name:"Tailwind CSS", p:85 },
+      { name:"MCP", p:70 },
     ];
     return (
       <div className="tab-content-enter">
